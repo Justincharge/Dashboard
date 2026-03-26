@@ -372,7 +372,7 @@ Fournis une analyse concise (max 200 mots) avec :
 
 Sois direct, précis et orienté résultats. Utilise des emojis pour structurer.`;
 
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("/api/analyze", { ... });
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
